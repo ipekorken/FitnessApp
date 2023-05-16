@@ -11,15 +11,12 @@ import Weight from './InfoFlow/Weight';
 import OnBoarding1 from './StartFlow/OnBoarding1';
 import OnBoarding2 from './StartFlow/OnBoarding2';
 import OnBoarding3 from './StartFlow/OnBoarding3';
-import SpinnerSplash from './StartFlow/SpinnerSplash';
 import Splash from './StartFlow/Splash';
 
 export {
   OnBoarding1,
   OnBoarding2,
   OnBoarding3,
-  Splash,
-  SpinnerSplash,
   Age,
   Gender,
   Weight,
@@ -30,4 +27,5 @@ export {
   Register,
   Forgot,
   Verification,
+  Splash,
 };

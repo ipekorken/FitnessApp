@@ -1,11 +1,18 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import {View, Text, Image, StatusBar} from 'react-native';
+import React, {useEffect} from 'react';
 import styles from './styles';
+import {ww, wh, Colors, appImages} from '@config';
 
-const OnBoarding3 = () => {
+const OnBoarding3 = ({navigation}) => {
   return (
-    <View>
-      <Text>OnBoarding3</Text>
+    <View style={styles.screen}>
+      <StatusBar backgroundColor={Colors.dark1} barStyle="light-content" />
+      <Image source={appImages.onBoardingImg3} />
+      <View style={styles.lineContainer}>
+        <View style={styles.line}></View>
+        <View style={styles.line}></View>
+        <View style={styles.selectedLine}></View>
+      </View>
     </View>
   );
 };

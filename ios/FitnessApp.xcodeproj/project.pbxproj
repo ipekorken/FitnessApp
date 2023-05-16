@@ -14,6 +14,18 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-FitnessApp-FitnessAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FitnessApp-FitnessAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9192C0E02A1399E800D2F619 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0D32A1398A200D2F619 /* OpenSans-Regular.ttf */; };
+		9192C0E12A1399E800D2F619 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0CE2A1398A200D2F619 /* OpenSans-Light.ttf */; };
+		9192C0E22A1399E800D2F619 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0D42A1398A200D2F619 /* OpenSans-Italic.ttf */; };
+		9192C0E32A1399E800D2F619 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0CF2A1398A200D2F619 /* OpenSans-Bold.ttf */; };
+		9192C0E42A1399E800D2F619 /* IntegralCF-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0CD2A1398A200D2F619 /* IntegralCF-Regular.otf */; };
+		9192C0E52A1399E800D2F619 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0CB2A1398A200D2F619 /* OpenSans-BoldItalic.ttf */; };
+		9192C0E62A1399E800D2F619 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0CC2A1398A200D2F619 /* OpenSans-LightItalic.ttf */; };
+		9192C0E72A1399E800D2F619 /* IntegralCF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0D02A1398A200D2F619 /* IntegralCF-Medium.otf */; };
+		9192C0E82A1399E800D2F619 /* IntegralCF-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0D12A1398A200D2F619 /* IntegralCF-Heavy.otf */; };
+		9192C0E92A1399E800D2F619 /* IntegralCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0D22A1398A200D2F619 /* IntegralCF-Bold.otf */; };
+		9192C0EC2A13A07500D2F619 /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0EA2A13A07500D2F619 /* OpenSans-Medium.ttf */; };
+		9192C0ED2A13A07500D2F619 /* OpenSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9192C0EB2A13A07500D2F619 /* OpenSans-MediumItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +55,18 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-FitnessApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FitnessApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FitnessApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-FitnessApp-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppTests/Pods-FitnessApp-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9192C0CB2A1398A200D2F619 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9192C0CC2A1398A200D2F619 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		9192C0CD2A1398A200D2F619 /* IntegralCF-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Regular.otf"; sourceTree = "<group>"; };
+		9192C0CE2A1398A200D2F619 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		9192C0CF2A1398A200D2F619 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		9192C0D02A1398A200D2F619 /* IntegralCF-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Medium.otf"; sourceTree = "<group>"; };
+		9192C0D12A1398A200D2F619 /* IntegralCF-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Heavy.otf"; sourceTree = "<group>"; };
+		9192C0D22A1398A200D2F619 /* IntegralCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IntegralCF-Bold.otf"; sourceTree = "<group>"; };
+		9192C0D32A1398A200D2F619 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		9192C0D42A1398A200D2F619 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		9192C0EA2A13A07500D2F619 /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Medium.ttf"; path = "Resources/OpenSans-Medium.ttf"; sourceTree = "<group>"; };
+		9192C0EB2A13A07500D2F619 /* OpenSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-MediumItalic.ttf"; path = "Resources/OpenSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,6 +140,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9192C0EA2A13A07500D2F619 /* OpenSans-Medium.ttf */,
+				9192C0EB2A13A07500D2F619 /* OpenSans-MediumItalic.ttf */,
+				9192C0DF2A13992E00D2F619 /* Resources */,
 				13B07FAE1A68108700A75B9A /* FitnessApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* FitnessAppTests */,
@@ -135,6 +162,23 @@
 				00E356EE1AD99517003FC87E /* FitnessAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9192C0DF2A13992E00D2F619 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9192C0D32A1398A200D2F619 /* OpenSans-Regular.ttf */,
+				9192C0CE2A1398A200D2F619 /* OpenSans-Light.ttf */,
+				9192C0D42A1398A200D2F619 /* OpenSans-Italic.ttf */,
+				9192C0CF2A1398A200D2F619 /* OpenSans-Bold.ttf */,
+				9192C0CD2A1398A200D2F619 /* IntegralCF-Regular.otf */,
+				9192C0CB2A1398A200D2F619 /* OpenSans-BoldItalic.ttf */,
+				9192C0CC2A1398A200D2F619 /* OpenSans-LightItalic.ttf */,
+				9192C0D02A1398A200D2F619 /* IntegralCF-Medium.otf */,
+				9192C0D12A1398A200D2F619 /* IntegralCF-Heavy.otf */,
+				9192C0D22A1398A200D2F619 /* IntegralCF-Bold.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -242,6 +286,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9192C0EC2A13A07500D2F619 /* OpenSans-Medium.ttf in Resources */,
+				9192C0ED2A13A07500D2F619 /* OpenSans-MediumItalic.ttf in Resources */,
+				9192C0E02A1399E800D2F619 /* OpenSans-Regular.ttf in Resources */,
+				9192C0E12A1399E800D2F619 /* OpenSans-Light.ttf in Resources */,
+				9192C0E22A1399E800D2F619 /* OpenSans-Italic.ttf in Resources */,
+				9192C0E32A1399E800D2F619 /* OpenSans-Bold.ttf in Resources */,
+				9192C0E42A1399E800D2F619 /* IntegralCF-Regular.otf in Resources */,
+				9192C0E52A1399E800D2F619 /* OpenSans-BoldItalic.ttf in Resources */,
+				9192C0E62A1399E800D2F619 /* OpenSans-LightItalic.ttf in Resources */,
+				9192C0E72A1399E800D2F619 /* IntegralCF-Medium.otf in Resources */,
+				9192C0E82A1399E800D2F619 /* IntegralCF-Heavy.otf in Resources */,
+				9192C0E92A1399E800D2F619 /* IntegralCF-Bold.otf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

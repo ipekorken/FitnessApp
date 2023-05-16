@@ -2,12 +2,12 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import styles from './styles';
 
-const SpinnerSplash = () => {
+const BackButton = () => {
   return (
     <View>
-      <Text>SpinnerSplash</Text>
+      <Text>BackButton</Text>
     </View>
   );
 };
 
-export default SpinnerSplash;
+export default BackButton;
