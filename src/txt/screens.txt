@@ -1,0 +1,18 @@
+splash
+//
+onboarding 1
+onboarding 2
+onboarding 3
+//
+gender
+age
+weight
+height
+goal
+activity level
+//
+login
+sign up
+forgot password
+verification
+//
