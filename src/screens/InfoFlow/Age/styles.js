@@ -28,7 +28,26 @@ export default StyleSheet.create({
     fontSize: ww(0.03),
   },
   ageContainer: {
-    alignItems: 'center',
+    height: wh(0.5),
+    width: ww(0.2),
+    alignSelf: 'center',
+  },
+  farAgeTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.04),
+    color: Colors.white,
+    opacity: 0.5,
+  },
+  ageTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.055),
+    color: Colors.white,
+    opacity: 0.8,
+  },
+  selectedAgeTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.1),
+    color: Colors.white,
   },
   bottomContainer: {
     flexDirection: 'row',

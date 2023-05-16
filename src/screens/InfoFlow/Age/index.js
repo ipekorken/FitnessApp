@@ -1,12 +1,29 @@
 import {View, Text, StatusBar, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './styles';
 import {ww, wh, Colors} from '@config';
 import {NextButton, BackButton} from '@components';
+import ScrollPicker from 'react-native-wheel-scrollview-picker';
 
 const Age = ({navigation, route}) => {
   const {gender} = route.params;
-  const [age, setAge] = useState('35');
+  const [age, setAge] = useState(35);
+  const [ageIndex, setAgeIndex] = useState(34);
+  const [ageData, setAgeData] = useState([]);
+
+  useEffect(() => {
+    createAgeData();
+  }, []);
+
+  function createAgeData() {
+    const arr = Array.from(
+      {
+        length: 100,
+      },
+      (v, k) => k + 1,
+    );
+    setAgeData(arr);
+  }
 
   function handleNext() {
     navigation.navigate('Weight', {
@@ -30,7 +47,34 @@ const Age = ({navigation, route}) => {
           </Text>
         </View>
       </View>
-      <View style={styles.ageContainer}></View>
+      <View style={styles.ageContainer}>
+        <ScrollPicker
+          dataSource={ageData}
+          selectedIndex={ageIndex}
+          renderItem={(item, index) => {
+            return (
+              <Text
+                style={
+                  index == ageIndex
+                    ? styles.selectedAgeTxt
+                    : index == ageIndex - 1 || index == ageIndex + 1
+                    ? styles.ageTxt
+                    : styles.farAgeTxt
+                }>
+                {item}
+              </Text>
+            );
+          }}
+          onValueChange={(item, selectedIndex) => {
+            setAge(item);
+            setAgeIndex(selectedIndex);
+          }}
+          wrapperColor={Colors.dark1}
+          itemHeight={wh(0.1)}
+          highlightColor={Colors.primary}
+          highlightBorderWidth={2}
+        />
+      </View>
       <View style={styles.bottomContainer}>
         <BackButton onPress={handleBack} />
         <NextButton btnTitle={'Next'} onPress={handleNext} />
