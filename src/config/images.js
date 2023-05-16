@@ -3,4 +3,5 @@ export const appImages = {
   onBoardingImg1: require('../assets/images/onBoardingImg1.png'),
   onBoardingImg2: require('../assets/images/onBoardingImg2.png'),
   onBoardingImg3: require('../assets/images/onBoardingImg3.png'),
+  weightSpinner: require('../assets/images/weightSpinner.png'),
 };

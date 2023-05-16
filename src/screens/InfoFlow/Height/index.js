@@ -1,14 +1,29 @@
 import {View, Text, StatusBar, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './styles';
 import {ww, wh, Colors} from '@config';
-import {NextButton} from '@components';
-import {FemaleIcon, MaleIcon} from '@assets';
-import {BackButton} from '../../../components';
+import {NextButton, BackButton} from '@components';
+import ScrollPicker from 'react-native-wheel-scrollview-picker';
 
 const Height = ({navigation, route}) => {
   const {gender, age, weight} = route.params;
-  const [height, setHeight] = useState('167');
+  const [height, setHeight] = useState(167);
+  const [heightIndex, setHeightIndex] = useState(166);
+  const [heightData, setHeightData] = useState([]);
+
+  useEffect(() => {
+    createHeightData();
+  }, []);
+
+  function createHeightData() {
+    const arr = Array.from(
+      {
+        length: 300,
+      },
+      (v, k) => k + 1,
+    );
+    setHeightData(arr);
+  }
 
   function handleNext() {
     navigation.navigate('Goal', {
@@ -34,7 +49,37 @@ const Height = ({navigation, route}) => {
           </Text>
         </View>
       </View>
-      <View style={styles.ageContainer}></View>
+      <View style={styles.heightContainer}>
+        <ScrollPicker
+          dataSource={heightData}
+          selectedIndex={heightIndex}
+          renderItem={(item, index) => {
+            return (
+              <View style={styles.selectedHeightView}>
+                <Text
+                  style={
+                    index == heightIndex
+                      ? styles.selectedHeightTxt
+                      : index == heightIndex - 1 || index == heightIndex + 1
+                      ? styles.heightTxt
+                      : styles.farHeightTxt
+                  }>
+                  {item}
+                </Text>
+                {index == heightIndex && <Text style={styles.cmTxt}>cm</Text>}
+              </View>
+            );
+          }}
+          onValueChange={(item, selectedIndex) => {
+            setHeight(item);
+            setHeightIndex(selectedIndex);
+          }}
+          wrapperColor={Colors.dark1}
+          itemHeight={wh(0.1)}
+          highlightColor={Colors.primary}
+          highlightBorderWidth={4}
+        />
+      </View>
       <View style={styles.bottomContainer}>
         <BackButton onPress={handleBack} />
         <NextButton btnTitle={'Next'} onPress={handleNext} />

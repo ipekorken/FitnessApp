@@ -27,8 +27,38 @@ export default StyleSheet.create({
     fontFamily: IntegralCF.regular,
     fontSize: ww(0.03),
   },
-  ageContainer: {
-    alignItems: 'center',
+  heightContainer: {
+    height: wh(0.5),
+    width: ww(0.45),
+    alignSelf: 'center',
+  },
+  farHeightTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.06),
+    color: Colors.white,
+    opacity: 0.5,
+  },
+  heightTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.1),
+    color: Colors.white,
+    opacity: 0.8,
+  },
+  selectedHeightTxt: {
+    fontFamily: OpenSans.medium,
+    fontSize: ww(0.15),
+    color: Colors.white,
+  },
+  selectedHeightView: {
+    flexDirection: 'row',
+  },
+  cmTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.06),
+    color: Colors.white,
+    height: wh(0.05),
+    alignSelf: 'flex-end',
+    marginLeft: ww(0.02),
   },
   bottomContainer: {
     flexDirection: 'row',

@@ -27,8 +27,27 @@ export default StyleSheet.create({
     fontFamily: IntegralCF.regular,
     fontSize: ww(0.03),
   },
-  ageContainer: {
-    alignItems: 'center',
+  goalContainer: {
+    height: wh(0.5),
+    width: ww(0.75),
+    alignSelf: 'center',
+  },
+  farGoalTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.06),
+    color: Colors.white,
+    opacity: 0.5,
+  },
+  goalTxt: {
+    fontFamily: OpenSans.regular,
+    fontSize: ww(0.08),
+    color: Colors.white,
+    opacity: 0.8,
+  },
+  selectedGoalTxt: {
+    fontFamily: OpenSans.medium,
+    fontSize: ww(0.085),
+    color: Colors.white,
   },
   bottomContainer: {
     flexDirection: 'row',
