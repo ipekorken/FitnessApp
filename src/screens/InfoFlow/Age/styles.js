@@ -29,24 +29,24 @@ export default StyleSheet.create({
   },
   ageContainer: {
     height: wh(0.5),
-    width: ww(0.2),
+    width: ww(0.35),
     alignSelf: 'center',
   },
   farAgeTxt: {
     fontFamily: OpenSans.regular,
-    fontSize: ww(0.04),
+    fontSize: ww(0.06),
     color: Colors.white,
     opacity: 0.5,
   },
   ageTxt: {
     fontFamily: OpenSans.regular,
-    fontSize: ww(0.055),
+    fontSize: ww(0.1),
     color: Colors.white,
     opacity: 0.8,
   },
   selectedAgeTxt: {
-    fontFamily: OpenSans.regular,
-    fontSize: ww(0.1),
+    fontFamily: OpenSans.medium,
+    fontSize: ww(0.15),
     color: Colors.white,
   },
   bottomContainer: {

@@ -72,7 +72,7 @@ const Age = ({navigation, route}) => {
           wrapperColor={Colors.dark1}
           itemHeight={wh(0.1)}
           highlightColor={Colors.primary}
-          highlightBorderWidth={2}
+          highlightBorderWidth={4}
         />
       </View>
       <View style={styles.bottomContainer}>
