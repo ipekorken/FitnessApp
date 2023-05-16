@@ -5,8 +5,9 @@ export default StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: Colors.dark1,
-    justifyContent: 'space-around',
-    padding: wh(0.035),
+    justifyContent: 'space-between',
+    paddingHorizontal: ww(0.08),
+    paddingVertical: wh(0.08),
   },
   titleContainer: {
     alignItems: 'center',
@@ -25,7 +26,6 @@ export default StyleSheet.create({
     color: Colors.white,
     fontFamily: IntegralCF.regular,
     fontSize: ww(0.03),
-    marginBottom: wh(0.005),
   },
   touchContainer: {
     alignItems: 'center',
@@ -36,7 +36,6 @@ export default StyleSheet.create({
     borderRadius: ww(0.2),
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: wh(0.05),
   },
   genderTxt: {
     marginTop: wh(0.02),

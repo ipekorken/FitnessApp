@@ -5,7 +5,10 @@ import {NextIcon} from '@assets';
 
 const NextButton = ({onPress, btnTitle}) => {
   return (
-    <TouchableOpacity style={styles.touch} onPress={onPress}>
+    <TouchableOpacity
+      activeOpacity={0.8}
+      style={styles.touch}
+      onPress={onPress}>
       <Text style={styles.txt}>{btnTitle}</Text>
       <NextIcon />
     </TouchableOpacity>

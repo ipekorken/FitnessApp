@@ -1,12 +1,16 @@
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import styles from './styles';
+import {BackIcon} from '@assets';
 
-const BackButton = () => {
+const BackButton = ({onPress}) => {
   return (
-    <View>
-      <Text>BackButton</Text>
-    </View>
+    <TouchableOpacity
+      activeOpacity={0.8}
+      style={styles.touch}
+      onPress={onPress}>
+      <BackIcon />
+    </TouchableOpacity>
   );
 };
 

@@ -5,10 +5,14 @@ import {ww, wh, Colors} from '@config';
 import {NextButton} from '@components';
 import {FemaleIcon, MaleIcon} from '@assets';
 
-const Gender = () => {
+const Gender = ({navigation}) => {
   const [gender, setGender] = useState('Male');
 
-  function handleNext() {}
+  function handleNext() {
+    navigation.navigate('Age', {
+      gender: gender,
+    });
+  }
 
   return (
     <View style={styles.screen}>
@@ -19,7 +23,9 @@ const Gender = () => {
           <Text style={styles.subTitle}>
             TO GIVE YOU A BETTER EXPERIENCE WE NEED
           </Text>
-          <Text style={styles.subTitle}>TO KNOW YOUR GENDER</Text>
+          <Text style={[styles.subTitle, {marginTop: wh(0.005)}]}>
+            TO KNOW YOUR GENDER
+          </Text>
         </View>
       </View>
       <View style={styles.touchContainer}>
@@ -44,7 +50,10 @@ const Gender = () => {
           onPress={() => setGender('Female')}
           style={[
             styles.genderTouch,
-            {backgroundColor: gender == 'Male' ? Colors.dark2 : Colors.primary},
+            {
+              backgroundColor: gender == 'Male' ? Colors.dark2 : Colors.primary,
+              marginTop: wh(0.05),
+            },
           ]}>
           <FemaleIcon color={gender == 'Male' ? Colors.white : Colors.black} />
           <Text

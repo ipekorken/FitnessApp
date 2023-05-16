@@ -7,7 +7,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    width: ww(0.32),
+    width: ww(0.38),
+    height: ww(0.16),
     borderRadius: ww(0.1),
     paddingVertical: wh(0.015),
     alignSelf: 'flex-end',
@@ -15,7 +16,7 @@ export default StyleSheet.create({
   txt: {
     color: Colors.black,
     paddingHorizontal: ww(0.02),
-    fontSize: ww(0.045),
+    fontSize: ww(0.055),
     fontFamily: OpenSans.medium,
   },
 });
