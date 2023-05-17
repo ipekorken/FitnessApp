@@ -5932,6 +5932,11 @@ react-native-gradle-plugin@^0.71.18:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.18.tgz#20ef199bc85be32e45bb6cc069ec2e7dcb1a74a6"
   integrity sha512-7F6bD7B8Xsn3JllxcwHhFcsl9aHIig47+3eN4IHFNqfLhZr++3ElDrcqfMzugM+niWbaMi7bJ0kAkAL8eCpdWg==
 
+react-native-otp-form@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-otp-form/-/react-native-otp-form-1.1.2.tgz#e1a21298d959efa10da98f84d93625c09995cc6d"
+  integrity sha512-EAN4W+l1tm2JOaI6I+/rgpKkRqr7kMmNmAtUG+WU4ct+OB+syvFLnpRnPXMmPowU9DrvZ06ZBWu4RudyHNvE4g==
+
 react-native-ruler-picker@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/react-native-ruler-picker/-/react-native-ruler-picker-0.2.1.tgz#225dcad7e8800d80ec3fad87be2a697da92c88c7"

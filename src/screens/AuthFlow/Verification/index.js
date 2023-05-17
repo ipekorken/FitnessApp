@@ -3,21 +3,10 @@ import React, {useRef, useState} from 'react';
 import styles from './styles';
 import {ww, wh, Colors, appImages} from '@config';
 import {AppBackButton, AppButton} from '@components';
+import {OTP} from 'react-native-otp-form';
 
 const Verification = ({navigation}) => {
-  const ref1 = useRef();
-  const ref2 = useRef();
-  const ref3 = useRef();
-  const ref4 = useRef();
-  const ref5 = useRef();
-  const ref6 = useRef();
-  const [input1, setInput1] = useState('');
-  const [input2, setInput2] = useState('');
-  const [input3, setInput3] = useState('');
-  const [input4, setInput4] = useState('');
-  const [input5, setInput5] = useState('');
-  const [input6, setInput6] = useState('');
-  const [inputFocus, setInputFocus] = useState('input1');
+  const [code, setCode] = useState('');
 
   return (
     <View style={styles.screen}>
@@ -32,155 +21,13 @@ const Verification = ({navigation}) => {
       </Text>
       <View style={styles.bottomContainer}>
         <View style={styles.inputContainer}>
-          <View
-            style={[
-              styles.inputView,
-              {
-                borderColor:
-                  inputFocus == 'input1' || input1 !== ''
-                    ? Colors.primary
-                    : Colors.dark3,
-              },
-            ]}>
-            <TextInput
-              style={styles.input}
-              placeholder="*"
-              placeholderTextColor={Colors.white}
-              value={input1}
-              onChangeText={text => setInput1(text)}
-              autoCapitalize="none"
-              ref={ref1}
-              autoCorrect={false}
-              onSubmitEditing={() => ref2.current.focus()}
-              returnKeyType="next"
-              onFocus={() => setInputFocus('input1')}
-              maxLength={1}
-              autoFocus={() => {
-                if (input1.length == 1) {
-                  ref2.current.focus();
-                }
-              }}
-            />
-          </View>
-          <View
-            style={[
-              styles.inputView,
-              {
-                borderColor:
-                  inputFocus == 'input2' || input2 !== ''
-                    ? Colors.primary
-                    : Colors.dark3,
-              },
-            ]}>
-            <TextInput
-              style={styles.input}
-              placeholder="*"
-              placeholderTextColor={Colors.white}
-              onChangeText={text => setInput2(text)}
-              autoCapitalize="none"
-              ref={ref2}
-              autoCorrect={false}
-              onSubmitEditing={() => ref3.current.focus()}
-              returnKeyType="next"
-              onFocus={() => setInputFocus('input2')}
-              maxLength={1}
-            />
-          </View>
-          <View
-            style={[
-              styles.inputView,
-              {
-                borderColor:
-                  inputFocus == 'input3' || input3 !== ''
-                    ? Colors.primary
-                    : Colors.dark3,
-              },
-            ]}>
-            <TextInput
-              style={styles.input}
-              placeholder="*"
-              placeholderTextColor={Colors.white}
-              onChangeText={text => setInput3(text)}
-              autoCapitalize="none"
-              ref={ref3}
-              autoCorrect={false}
-              onSubmitEditing={() => ref4.current.focus()}
-              returnKeyType="next"
-              onFocus={() => setInputFocus('input3')}
-              maxLength={1}
-            />
-          </View>
-          <View
-            style={[
-              styles.inputView,
-              {
-                borderColor:
-                  inputFocus == 'input4' || input4 !== ''
-                    ? Colors.primary
-                    : Colors.dark3,
-              },
-            ]}>
-            <TextInput
-              style={styles.input}
-              placeholder="*"
-              placeholderTextColor={Colors.white}
-              onChangeText={text => setInput4(text)}
-              autoCapitalize="none"
-              ref={ref4}
-              autoCorrect={false}
-              onSubmitEditing={() => ref5.current.focus()}
-              returnKeyType="next"
-              onFocus={() => setInputFocus('input4')}
-              maxLength={1}
-            />
-          </View>
-          <View
-            style={[
-              styles.inputView,
-              {
-                borderColor:
-                  inputFocus == 'input5' || input5 !== ''
-                    ? Colors.primary
-                    : Colors.dark3,
-              },
-            ]}>
-            <TextInput
-              style={styles.input}
-              placeholder="*"
-              placeholderTextColor={Colors.white}
-              onChangeText={text => setInput5(text)}
-              autoCapitalize="none"
-              ref={ref5}
-              autoCorrect={false}
-              onSubmitEditing={() => ref6.current.focus()}
-              returnKeyType="next"
-              onFocus={() => setInputFocus('input5')}
-              maxLength={1}
-            />
-          </View>
-          <View
-            style={[
-              styles.inputView,
-              {
-                borderColor:
-                  inputFocus == 'input6' || input6 !== ''
-                    ? Colors.primary
-                    : Colors.dark3,
-              },
-            ]}>
-            <TextInput
-              style={styles.input}
-              placeholder="*"
-              placeholderTextColor={Colors.white}
-              onChangeText={text => setInput6(text)}
-              autoCapitalize="none"
-              ref={ref6}
-              autoCorrect={false}
-              returnKeyType="done"
-              onFocus={() => setInputFocus('input6')}
-              maxLength={1}
-            />
-          </View>
+          <OTP
+            style={styles.inputView}
+            codeCount={6}
+            onFinish={finish => setCode(finish)}
+            placeholder="*"
+            placeholderTextColor={Colors.white}
+          />
         </View>
         <View style={styles.bottomSubContainer}>
           <TouchableOpacity
