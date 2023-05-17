@@ -27,8 +27,19 @@ export default StyleSheet.create({
     fontFamily: IntegralCF.regular,
     fontSize: ww(0.03),
   },
-  ageContainer: {
+  weightContainer: {
     alignItems: 'center',
+  },
+  weightTxt: {
+    fontFamily: OpenSans.medium,
+    fontSize: ww(0.1),
+    color: Colors.white,
+  },
+  kgTxt: {
+    fontFamily: OpenSans.medium,
+    fontSize: ww(0.06),
+    color: Colors.white,
+    marginBottom: wh(0.01),
   },
   bottomContainer: {
     flexDirection: 'row',

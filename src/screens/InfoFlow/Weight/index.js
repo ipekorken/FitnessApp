@@ -1,14 +1,20 @@
-import {View, Text, StatusBar, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  StatusBar,
+  TouchableOpacity,
+  Image,
+  ImageBackground,
+} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
-import {ww, wh, Colors} from '@config';
-import {NextButton} from '@components';
-import {FemaleIcon, MaleIcon} from '@assets';
-import {BackButton} from '../../../components';
+import {ww, wh, Colors, appImages} from '@config';
+import {NextButton, BackButton} from '@components';
+import {RulerPicker} from 'react-native-ruler-picker';
 
 const Weight = ({navigation, route}) => {
   const {gender, age} = route.params;
-  const [weight, setWeight] = useState('54');
+  const [weight, setWeight] = useState(55);
 
   function handleNext() {
     navigation.navigate('Height', {
@@ -31,7 +37,26 @@ const Weight = ({navigation, route}) => {
           <Text style={styles.subTitle}>YOU CAN ALWAYS CHANGE THIS LATER</Text>
         </View>
       </View>
-      <View style={styles.ageContainer}></View>
+      <View source={appImages.weightSpinner}>
+        <RulerPicker
+          min={0}
+          max={240}
+          step={0.1}
+          fractionDigits={1}
+          initialValue={55}
+          onValueChangeEnd={number => setWeight(number)}
+          unit="kg"
+          indicatorColor={Colors.primary}
+          indicatorHeight={wh(0.12)}
+          shortStepColor={Colors.primary}
+          shortStepHeight={wh(0.04)}
+          longStepColor={Colors.primary}
+          longStepHeight={wh(0.1)}
+          width={ww(0.85)}
+          valueTextStyle={styles.weightTxt}
+          unitTextStyle={styles.kgTxt}
+        />
+      </View>
       <View style={styles.bottomContainer}>
         <BackButton onPress={handleBack} />
         <NextButton btnTitle={'Next'} onPress={handleNext} />
