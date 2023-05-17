@@ -12,6 +12,7 @@ import AppleIcon from './icons/AppleIcon';
 import RedCloseSquare from './icons/RedCloseSquare';
 import RedSquare from './icons/RedSquare';
 import HideEyeIcon from './icons/HideEyeIcon';
+import SmallBackIcon from './icons/SmallBackIcon';
 
 export {
   UserCircle,
@@ -28,4 +29,5 @@ export {
   RedCloseSquare,
   RedSquare,
   HideEyeIcon,
+  SmallBackIcon,
 };

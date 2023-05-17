@@ -1,17 +1,17 @@
 import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import styles from './styles';
-import {NextIcon} from '@assets';
+import {SmallBackIcon} from '@assets';
 
-const AppButton = ({onPress, btnTitle}) => {
+const AppBackButton = ({onPress}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.8}
       style={styles.touch}
       onPress={onPress}>
-      <Text style={styles.txt}>{btnTitle}</Text>
+      <SmallBackIcon />
     </TouchableOpacity>
   );
 };
 
-export default AppButton;
+export default AppBackButton;
