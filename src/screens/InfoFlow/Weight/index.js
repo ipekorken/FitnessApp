@@ -37,7 +37,7 @@ const Weight = ({navigation, route}) => {
           <Text style={styles.subTitle}>YOU CAN ALWAYS CHANGE THIS LATER</Text>
         </View>
       </View>
-      <View source={appImages.weightSpinner}>
+      <View style={styles.weightContainer}>
         <RulerPicker
           min={0}
           max={240}

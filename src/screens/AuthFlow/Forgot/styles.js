@@ -5,8 +5,6 @@ export default StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: Colors.dark1,
-    paddingHorizontal: ww(0.08),
-    paddingVertical: wh(0.08),
   },
   title: {
     marginTop: wh(0.05),
@@ -18,6 +16,12 @@ export default StyleSheet.create({
     color: Colors.white,
     fontSize: ww(0.035),
     fontFamily: IntegralCF.medium,
+  },
+  container: {
+    paddingHorizontal: ww(0.08),
+    paddingVertical: wh(0.08),
+    flex: 1,
+    justifyContent: 'space-between',
   },
   forgotTouch: {},
   forgotTxt: {

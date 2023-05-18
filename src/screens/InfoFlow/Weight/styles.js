@@ -29,11 +29,14 @@ export default StyleSheet.create({
   },
   weightContainer: {
     alignItems: 'center',
+    justifyContent: 'center',
+    height: wh(0.5),
   },
   weightTxt: {
     fontFamily: OpenSans.medium,
     fontSize: ww(0.1),
     color: Colors.white,
+    height: wh(0.1),
   },
   kgTxt: {
     fontFamily: OpenSans.medium,

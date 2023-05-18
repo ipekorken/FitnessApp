@@ -1,3 +1,5 @@
+import Home from './AppFlow/Home';
+import Profile from './AppFlow/Profile';
 import Forgot from './AuthFlow/Forgot';
 import Login from './AuthFlow/Login';
 import Register from './AuthFlow/Register';
@@ -28,4 +30,6 @@ export {
   Forgot,
   Verification,
   Splash,
+  Home,
+  Profile,
 };

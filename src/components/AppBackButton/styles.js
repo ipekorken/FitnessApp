@@ -12,5 +12,6 @@ export default StyleSheet.create({
     borderRadius: ww(0.06),
     paddingVertical: wh(0.015),
     alignSelf: 'flex-start',
+    marginLeft: ww(-0.02),
   },
 });

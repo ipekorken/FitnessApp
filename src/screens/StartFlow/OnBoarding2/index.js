@@ -13,11 +13,17 @@ const OnBoarding2 = ({navigation}) => {
   return (
     <View style={styles.screen}>
       <StatusBar backgroundColor={Colors.dark1} barStyle="light-content" />
-      <Image source={appImages.onBoardingImg2} />
-      <View style={styles.lineContainer}>
-        <View style={styles.line}></View>
-        <View style={styles.selectedLine}></View>
-        <View style={styles.line}></View>
+      <View style={styles.container}>
+        <View style={styles.titleView}>
+          <Text style={styles.title}>CREATE A WORK PLAN,</Text>
+          <Text style={styles.boldTitle}>TO STAY FIT</Text>
+        </View>
+        <Image style={styles.img} source={appImages.onBoardingImg2} />
+        <View style={styles.lineContainer}>
+          <View style={styles.line}></View>
+          <View style={styles.selectedLine}></View>
+          <View style={styles.line}></View>
+        </View>
       </View>
     </View>
   );

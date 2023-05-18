@@ -6,8 +6,6 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.dark1,
     justifyContent: 'space-between',
-    paddingHorizontal: ww(0.08),
-    paddingVertical: wh(0.08),
   },
   signUpImg: {
     position: 'absolute',
@@ -25,6 +23,12 @@ export default StyleSheet.create({
     fontFamily: IntegralCF.regular,
     fontSize: ww(0.035),
     color: Colors.white,
+  },
+  container: {
+    paddingHorizontal: ww(0.08),
+    paddingVertical: wh(0.08),
+    flex: 1,
+    justifyContent: 'space-between',
   },
   inputContainer: {
     marginTop: wh(0.05),

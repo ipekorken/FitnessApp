@@ -40,13 +40,13 @@ export default StyleSheet.create({
   },
   heightTxt: {
     fontFamily: OpenSans.regular,
-    fontSize: ww(0.1),
+    fontSize: ww(0.09),
     color: Colors.white,
     opacity: 0.8,
   },
   selectedHeightTxt: {
     fontFamily: OpenSans.medium,
-    fontSize: ww(0.15),
+    fontSize: ww(0.12),
     color: Colors.white,
   },
   selectedHeightView: {
@@ -54,7 +54,7 @@ export default StyleSheet.create({
   },
   cmTxt: {
     fontFamily: OpenSans.regular,
-    fontSize: ww(0.06),
+    fontSize: ww(0.05),
     color: Colors.white,
     height: wh(0.05),
     alignSelf: 'flex-end',

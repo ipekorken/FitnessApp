@@ -4,8 +4,11 @@ import styles from './styles';
 import {ww, wh, Colors} from '@config';
 import {NextButton, BackButton} from '@components';
 import ScrollPicker from 'react-native-wheel-scrollview-picker';
+import {useDispatch} from 'react-redux';
+import {setHideInfo, setUserInfo} from '@redux';
 
 const Level = ({navigation, route}) => {
+  const dispatch = useDispatch();
   const {gender, age, weight, height, goal} = route.params;
   const [level, setLevel] = useState('Intermediate');
   const [levelIndex, setLevelIndex] = useState(2);
@@ -18,15 +21,17 @@ const Level = ({navigation, route}) => {
   ]);
 
   function handleNext() {
-    const InfoFlowData = {
-      gender: gender,
-      age: age,
-      weight: weight,
-      height: height,
-      goal: goal,
-      level: level,
-    };
-    console.log('InfoFlowData: ', InfoFlowData);
+    dispatch(
+      setUserInfo({
+        gender: gender,
+        age: age,
+        weight: weight,
+        height: height,
+        goal: goal,
+        level: level,
+      }),
+    );
+    dispatch(setHideInfo(true));
   }
 
   function handleBack() {

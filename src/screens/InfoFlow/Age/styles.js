@@ -46,7 +46,7 @@ export default StyleSheet.create({
   },
   selectedAgeTxt: {
     fontFamily: OpenSans.medium,
-    fontSize: ww(0.15),
+    fontSize: ww(0.12),
     color: Colors.white,
   },
   bottomContainer: {

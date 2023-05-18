@@ -6,8 +6,6 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.dark1,
     justifyContent: 'space-between',
-    paddingHorizontal: ww(0.08),
-    paddingVertical: wh(0.08),
   },
   loginImg: {
     position: 'absolute',
@@ -20,6 +18,12 @@ export default StyleSheet.create({
     fontFamily: IntegralCF.regular,
     fontSize: ww(0.12),
     color: Colors.white,
+  },
+  container: {
+    paddingHorizontal: ww(0.08),
+    paddingVertical: wh(0.08),
+    flex: 1,
+    justifyContent: 'space-between',
   },
   inputContainer: {
     marginTop: wh(0.1),
@@ -38,7 +42,9 @@ export default StyleSheet.create({
     fontSize: ww(0.05),
     width: ww(0.75),
   },
-  forgotTouch: {},
+  forgotTouch: {
+    marginTop: wh(0.035),
+  },
   forgotTxt: {
     fontFamily: OpenSans.medium,
     color: Colors.primary,
@@ -47,6 +53,7 @@ export default StyleSheet.create({
     marginRight: ww(0.025),
   },
   bottomContainer: {
+    marginTop: wh(0.035),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
