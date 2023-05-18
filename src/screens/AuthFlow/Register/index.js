@@ -18,8 +18,10 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scrollview';
 
 const Register = ({navigation}) => {
   const [selectedOption, setSelectedOption] = useState('signUp');
+  const refEmail = useRef();
   const refPass = useRef();
   const refPassAgain = useRef();
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const [passAgain, setPassAgain] = useState('');
@@ -71,7 +73,21 @@ const Register = ({navigation}) => {
                 <TextInput
                   style={styles.input}
                   placeholderTextColor={Colors.white}
+                  placeholder="Name"
+                  ref={refEmail}
+                  onChangeText={text => setName(text)}
+                  autoCapitalize="none"
+                  autoCorrect={false}
+                  onSubmitEditing={() => refEmail.current.focus()}
+                  returnKeyType="next"
+                />
+              </View>
+              <View style={[styles.inputView, {marginTop: wh(0.05)}]}>
+                <TextInput
+                  style={styles.input}
+                  placeholderTextColor={Colors.white}
                   placeholder="Email"
+                  ref={refEmail}
                   onChangeText={text => setEmail(text)}
                   autoCapitalize="none"
                   autoCorrect={false}
@@ -126,9 +142,6 @@ const Register = ({navigation}) => {
               </View>
             </View>
 
-            <TouchableOpacity style={styles.forgotTouch} onPress={handleForgot}>
-              <Text style={styles.forgotTxt}>Forgot Password</Text>
-            </TouchableOpacity>
             <View style={styles.bottomContainer}>
               <View style={styles.bottomLeft}>
                 <BackButton btnType={'apple'} onPress={handleApple} />

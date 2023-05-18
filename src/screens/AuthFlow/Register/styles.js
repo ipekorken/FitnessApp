@@ -12,7 +12,7 @@ export default StyleSheet.create({
     width: ww(1),
   },
   helloView: {
-    marginTop: wh(0.1),
+    marginTop: wh(0.02),
   },
   hello: {
     fontFamily: IntegralCF.regular,
@@ -26,7 +26,8 @@ export default StyleSheet.create({
   },
   container: {
     paddingHorizontal: ww(0.08),
-    paddingVertical: wh(0.08),
+    paddingTop: wh(0.08),
+    paddingBottom: wh(0.05),
     flex: 1,
     justifyContent: 'space-between',
   },

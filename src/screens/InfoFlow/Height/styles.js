@@ -7,7 +7,8 @@ export default StyleSheet.create({
     backgroundColor: Colors.dark1,
     justifyContent: 'space-between',
     paddingHorizontal: ww(0.08),
-    paddingVertical: wh(0.08),
+    paddingTop: wh(0.08),
+    paddingBottom: wh(0.05),
   },
   titleContainer: {
     alignItems: 'center',

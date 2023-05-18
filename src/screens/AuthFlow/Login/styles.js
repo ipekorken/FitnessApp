@@ -21,7 +21,8 @@ export default StyleSheet.create({
   },
   container: {
     paddingHorizontal: ww(0.08),
-    paddingVertical: wh(0.08),
+    paddingTop: wh(0.08),
+    paddingBottom: wh(0.05),
     flex: 1,
     justifyContent: 'space-between',
   },
